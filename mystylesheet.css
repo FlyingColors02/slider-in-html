@@ -1,0 +1,239 @@
+/* SLIDER FROM BOTTOM*/
+
+div.container1 , div.container2, div.container3, div.container4, div.container5, div.container6{
+    width: 430px;    /* gives width to div*/
+    height: 300px;   /*gives height to div*/
+    /*border:2px solid red;*/ /* gives border to div of 2px; NOte: until u write solid it won't give border*/
+    position: relative;
+    overflow: hidden;
+    float:left;
+    cursor: pointer;
+}
+
+div.container1 span.Image{
+    
+    width: 430px;             
+    height: 300px;
+    /*border:2px solid blue;*/     /* only gives border to <a> i.e;Image Slider */
+    display: block;             /* occupy the entire div and remove everything else within the area*/
+    background-image: url("./img/bg.jpg");
+    background-position:50% 20%; 
+}
+
+div.container1 span.slider_Heading{
+    width: 430px;
+    height: 300px;
+    display: block;
+    background-color: gray;
+    font-size: 30px;
+    font-family: fantasy;
+    color: blue;
+    position: absolute;
+    top:250px;
+    left:0px;
+    opacity: 0.7;
+    transition:all 1s ease-in-out 0s;
+}
+
+div.container1 span.slider_Text{
+    font-size: 25px;
+    font-family: monospace;
+    color: black;
+}
+   
+ div.container1:hover span.slider_Heading{
+    top:100px;
+    
+}
+
+/* SLIDER FROM top*/
+div.container2 img{
+    width:430px;
+    height:300px;
+    background-position: center center;
+    display:block;
+}
+
+div.container2 span.Block{
+    width:430px;
+    height: 300px;
+    background-color: gray;
+    opacity: 0.7;
+    position: absolute;
+    top:-250px;
+    left:0px;
+    display: block;
+    transition: all 1s ease-in-out 0s;
+}
+div.container2 span.slider_Heading{
+    font-size: 30px;
+    color: rgb(236, 11, 48);
+    font-family: fantasy;
+}
+
+div.container2 span.slider_Text, div.container3 span.slider_Text, div.container4 span.slider_Text{
+    font-size: 25px;
+    color: black;
+}
+
+div.container2:hover span.Block{
+    top:-150px;
+}
+
+/*SLIDER FROM LEFT */
+div.container3 img{
+    width:430px;
+    height:300px;
+    display:block;
+    background-position: center center;
+}
+div.container3 span.Block{
+    width:300px;
+    height: 300px;
+    background-color: gray;
+    opacity: 0.7;
+    position: absolute;
+    top:0px;
+    left:-300px;
+    display: block;
+    transition: all 1.5s ease-in 0s; 
+}
+div.container3 span.slider_Heading{
+    font-size: 30px;
+    color:red;
+    font-family: fantasy;
+}
+div.container3:hover span.Block{
+    left:0px
+}
+
+/*SLIDER FROM RIGHT*/
+div.container4 img{
+    width:430px;
+    height:300px;
+    display:block;
+    background-position: 70% 50%;
+}
+div.container4 span.Block{
+    width:300px;
+    height: 300px;
+    background-color: gray;
+    opacity: 0.7;
+    position: absolute;
+    top:0px;
+    right:-500px;
+    display: block;
+    transition: all 1.5s ease-in 0s; 
+}
+div.container4 span.slider_Heading{
+    font-size: 30px;
+    color:rgb(124, 16, 128);
+    font-family: fantasy;
+}
+div.container4:hover span.Block{
+    right:0px
+}
+
+/*LEFT-RIGHT SLIDER*/
+div.container5 img{
+    width:430px;
+    height:300px;
+    display:block;
+    background-position: 70% 50%;
+}
+div.container5 span.Block2{
+    width:200px;
+    height: 300px;
+    background-color: gray;
+    opacity: 0.7;
+    position: absolute;
+    top:0px;
+    right:-300px;
+    display: block;
+    transition: all 1.5s ease-in-out 0s; 
+}
+div.container5 span.slider_Heading2{
+    font-size: 30px;
+    color:rgb(124, 16, 128);
+    font-family: fantasy;
+}
+div.container5:hover span.Block2{
+    right:0px
+}
+div.container5 span.Block1{
+    width:200px;
+    height: 300px;
+    background-color: gray;
+    opacity: 0.7;
+    position: absolute;
+    top:0px;
+    left:-300px;
+    display: block;
+    transition: all 1.5s ease-in-out 0s; 
+}
+div.container5 span.slider_Heading1{
+    font-size: 30px;
+    color:red;
+    font-family: fantasy;
+}
+div.container5:hover span.Block1{
+    left:0px
+}
+
+/*LEFT AND RIGHT TEXT SLIDER*/
+
+div.container6 img{
+    width:430px;
+    height:300px;
+    display:block;
+    background-position: 70% 30%;
+}
+
+div.container6 span.Block{
+    width:450px;
+    height:300px;
+    background-color: gray;
+    opacity: 0.7;
+    transition: all 1s ease-in-out 0s;
+    position: absolute;
+}
+
+div.container6 span.LeftSide{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: rgb(241, 100, 18);
+    padding: 30px;
+    position: absolute;
+    top: 30px;
+    left:-150px;
+    text-align: center;
+    font-size: 25px;
+    transition: all 1s ease-in-out 0s ;
+}
+
+div.container6 span.RightSide{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    padding: 30px;
+    position: absolute;
+    bottom: 30px;
+    right:-150px;
+    text-align: center;
+    font-size: 25px;
+    transition: all 1s ease-in-out 0s ;
+}
+div.container6:hover span.LeftSide{
+    top: 30px;
+    left:70px;
+}
+div.container6:hover span.RightSide{
+    bottom: 30px;
+    right:70px;
+}
+div.container6:hover span.Block{
+    top:0px;
+    left:0px;
+}
